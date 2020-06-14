@@ -28,6 +28,10 @@ body {
     text-align: right;
     color:white;
 }
+.weather:hover {
+    background: rgba(47, 60, 85, 0.4);
+    border-bottom: 4px solid #11998e;
+}
 .time {
     color: white;
     font-size: 7.5em;
