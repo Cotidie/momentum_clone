@@ -1,0 +1,109 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+body {
+    display:flex;
+    background-color:whitesmoke;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+.bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    animation: fadeIn 1.2s;
+    z-index: -1;
+}
+.time {
+    color: white;
+    font-size: 7.5em;
+    font-weight: bold;
+    padding: 15px;
+    animation: fadeIn 1.5s;
+    text-align: center;
+    text-shadow: 3px 3px 5px grey;;
+}
+.tbBox {
+    width: 300px;
+    border: 0;
+    border-bottom: 4px solid WHITE;
+    outline: 0;
+    font-size: 1.4rem;
+    color: white;
+    padding: 5px 0px 5px 10px;
+    background: transparent;
+    margin-bottom: 20px;
+    transition: 0.4s;
+    animation: fadeIn 0.7s;
+}
+.tbBox::placeholder {
+    color: white;
+    font-size: 1.2rem;
+}
+.tbBox:focus {
+    background: rgba(47, 60, 85, 0.4);
+    border-bottom: 4px solid #11998e;
+}
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 0.5s;
+}
+.greeting {
+    background: rgba(47, 60, 85, 0.4);
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    color: white;
+    border-bottom:4px solid #11998e;
+    animation: fadeIn 0.7s;
+}
+ul.todoList {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+ul.todoList li {
+    position: relative;
+    background: rgba(0,0,0,0.3);
+    padding: 6px;
+}
+ul.todoList li:nth-child(2n) {
+    background: rgba(0,0,0,0.45);
+}
+ul.todoList li:hover {
+    background: #11998e;
+    opacity: 0.8;
+}
+ul.todoList li span.delBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 6px;
+}
+ul.todoList li span.delBtn:hover {
+    cursor: pointer;
+    background: #aaa;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
