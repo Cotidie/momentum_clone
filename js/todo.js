@@ -70,6 +70,7 @@ function createListItem(info) {
     li.innerText = info.text;
     li.id = info.id;
     li.appendChild(delSpan);
+    li.style.animation = "fadeIn 0.7s";
     
     return li;
 }
