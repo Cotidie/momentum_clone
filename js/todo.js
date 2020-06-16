@@ -50,7 +50,8 @@ function handleRemove() {
     const rmID = rmNode.id;
 
     //먼저 화면에서 삭제한다.
-    todoUl.removeChild(rmNode);
+    rmNode.style.opacity = "0";
+    setTimeout(function() {todoUl.removeChild(rmNode)}, 500);
 
     //Local Storage에 반영한다.
     arrTodo = arrTodo.filter(function(todo) {
